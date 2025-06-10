@@ -22,7 +22,7 @@ body {
     border: 4px solid black;
     border-radius: 5px;
     /* background-color: rgba(0, 0, 255, 0.2); */
-    background-image: url(/illus/map_sarzeau.png);
+    background-image: url(./illus/map_sarzeau.png);
     background-size: cover;
     justify-content: center;
     align-items: center;
