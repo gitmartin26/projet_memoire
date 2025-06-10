@@ -182,7 +182,7 @@ body {
     font-size: 30px;
     text-align: center;
     text-decoration: none; */
-    background-image: url(/illus/fleche_b.png);
+    background-image: url(./illus/fleche_b.png);
     background-size: contain;
     background-repeat: no-repeat;
     cursor: pointer;
