@@ -3,7 +3,7 @@
 body {
     margin: 0;
     font-family: pouler;
-    background: url(../illustrations/accueil/accueil.png);
+    background: url(./illustrations/accueil/accueil.png);
     background-size: 100%;
 }
 
