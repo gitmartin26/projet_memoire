@@ -1,0 +1,73 @@
+@import url(../font_accueil.css);
+
+body {
+    margin: 0;
+    font-family: pouler;
+    background: url(../illustrations/accueil/accueil.png);
+    background-size: 100%;
+}
+
+.titre {
+    position: absolute;
+    top: 2%;
+    left: 4.5%;
+    font-size: 140px;
+    color: aliceblue;
+    text-align: center;
+    justify-content: center;
+}
+
+.titre p {
+    position: absolute;
+    top: 60%;
+    font-family: kalam;
+    font-size: 20px;
+}
+
+/* h1 {
+    background: url(/illus/suscinio_immergé.jpg) 50% 50%;
+    background-size: cover;
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+} */
+
+.btn {
+    position: fixed;
+    left: 42%;
+    top: 90%;
+    z-index: 3;
+    margin: 5px;
+    width: 15%;
+    height: 3.65%;
+    background: none;
+    border: 4px solid rgb(255, 255, 255);
+    border-radius: 5px;
+    padding: 3px;
+    color: rgb(255, 255, 255);
+    font-family: kalam;
+    font-size: 20px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: 1s linear;
+}
+
+.btn:hover {
+    color: rgb(0, 0, 0);
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 36px;
+    top: 0%;
+    left: 0%;
+    background-color: rgb(255, 255, 255);
+    z-index: -1;
+    transition: 1s linear;
+}
+
+.btn:hover::before{
+    width: 100%;
+}

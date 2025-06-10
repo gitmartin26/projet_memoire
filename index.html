@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <img id="img" src="./illus/suscinio_immergé.jpg" alt="">
+    <!-- <a href="https://letterboxd.com/" target="_blank" class="bouton-lien">bouton</a> -->
+
+    <!-- <a href="https://chat-jai-pete.fr/" class="btn">Bouton</a> -->
+
+    <div>
+        <!-- <h1>Sous les flots</h1> -->
+    </div>
+
+    <div class="container">
+        <div class="square"></div>
+        <div id="card">
+            <img id="mask" src="./illus/carre_png.png" alt="">
+        </div>
+
+       <div class="menu-wrapper">
+        <div class="menu">
+            <!-- <h2>MENU</h2>
+            <button class="apropos">A propos</button> -->
+        </div>
+       </div>
+
+       <div class="fond">
+        <div class="slideone">
+            <!-- <div class="box box1">HOVER ME</div> -->
+            <div class="box2">
+                <div></div>
+                <!-- <img src="./Evariste-Vital_Luminais_-_Fuite_de_Gradlon_(ca.1884).jpg" width="10%"> -->
+            </div>
+            <div class="box3"></div>
+        </div>
+        <div class="slidetwo"></div>
+       </div>
+
+    </div>
+
+    <script>
+        ScrollReveal({
+            reset: true,
+            distance: '60px',
+            duration: 2500,
+            delay: 400
+        });
+
+        ScrollReveal().reveal('.scroll', {delay: 500, origin: 'left'})
+    </script>
+
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>

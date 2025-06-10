@@ -1,0 +1,65 @@
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+#bulle {
+    position: absolute;
+    display: flex;
+    height: 30vh;
+    font-size: small;
+    margin-left: 68%;
+    cursor: pointer;
+    background: url(./illus/bulle_bd.png) no-repeat;
+    min-width: 400px;
+    min-height: 100px;
+    align-items: center;
+    justify-content: center;
+}
+
+.text {
+    height: 200px;
+    width: 200px;
+    margin-bottom: 0px;
+    margin-right: 25px;
+}
+
+.diver{
+    position: absolute;
+    display: flex;
+    margin-top: 5%;
+    margin-left: 12%;
+    height: 80vh;
+    border: 4px solid black;
+    border-radius: 5px;
+}
+
+.btn {
+    position: absolute;
+    z-index: 3;
+    margin: 5px;
+    margin-top: 27%;
+    margin-left: 92%;
+    width: 5vw;
+    aspect-ratio: 1;
+    /* background-color: rgb(133, 151, 255);
+    border: 0.2px solid #8f8f9d;
+    border-radius: 5px;
+    padding: 3px;
+    color: black;
+    font-family: humane;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none; */
+    background-image: url(./illus/fleche.jpg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+

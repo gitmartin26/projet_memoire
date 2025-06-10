@@ -1,0 +1,313 @@
+@import url(./font.css);
+
+html{
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+.container {
+    /* background-image: 
+    url(./illus/suscinio_immergé.jpg);
+    background-size: 100%; */
+}
+
+.square {
+    height: 200px;
+    width: 200px;
+    border: 5px solid black;
+    resize: both;
+    overflow: scroll;
+    position: absolute;
+    z-index: 1;
+    background-image: 
+        url(./illus/suscinio_immergé.jpg);
+}
+
+/* grab reveal */
+#card{
+    width: 400px;
+    height: 400px;
+    /* background-color: black; */
+    border-radius: 5px;
+    cursor: pointer;
+    position: fixed;
+    opacity: 30%;
+    overflow: hidden;
+}
+
+#mask{
+
+}
+
+#img{
+    position: fixed;
+    mask-image: url(./illus/halo_2.png);
+    /* mask-image: url(./illus/nature-yuh.png); */
+    /* mask-image: url(./illus/halo_lumiere.png); */
+    width: 100vw;
+    height: 100vh;
+    mask-size: calc(var(--scroll-percent) * 10px) calc(100px * calc(var(--scroll-percent) * 0.1));
+    mask-position: 500px 500px;
+    mask-repeat: no-repeat;
+}
+
+.slide {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 100px;
+}
+
+.fond::-webkit-scrollbar {
+    display: none;
+}
+
+/* .menu {
+    display: flex;
+    width: 10vw;
+    height: 100%;
+    background-color: cadetblue;
+} */
+
+/* .bouton-lien { 
+    position: fixed;
+    z-index: 3;
+    margin: 5px;
+    width: 5%;
+    background-color: rgb(133, 151, 255);
+    border: 0.2px solid #8f8f9d;
+    border-radius: 5px;
+    padding: 3px;
+    color: black;
+    font-family: humane;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: default;
+}
+
+.bouton-lien:hover {
+    cursor: pointer;
+}
+
+.btn {
+    position: fixed;
+    left: 42%;
+    top: 90%;
+    z-index: 3;
+    margin: 5px;
+    width: 15%;
+    background: none;
+    border: 4px solid black;
+    border-radius: 5px;
+    padding: 3px;
+    color: black;
+    font-family: humane;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none;
+    cursor: pointer;
+    transition: .4s linear;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn::before{
+    content: "";
+    position: absolute;
+    width: 0%;
+    height: 36px;
+    top: 0%;
+    left: 0%;
+    background-color: black;
+    z-index: -1;
+    transition: 2s linear;
+}
+
+.btn:hover::before{
+    width: 100%;
+}
+
+h1 {
+    width: 100%;
+    margin: 5px;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    font-family: humane;
+    font-weight: 500;
+    font-size: 100px;
+} */
+
+/* .menu-wrapper{
+    position: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+}
+
+.menu {
+    height: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background: none;
+}
+
+h2 {
+    position: fixed;
+    width: 10%;
+    align-items: center;
+    text-align: center;
+    margin-top: 10px;
+    font-family: humane;
+    font-weight: 500;
+    font-size: 100px;
+}
+
+.apropos {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+    background: none;
+    font-family: humane;
+    font-weight: 100;
+    font-size: 50px;
+    cursor: pointer;
+    border: 4px solid black;
+    border-radius: 5px;
+    
+} */
+
+
+.slideone {
+    height: 125vh;
+    /* background: rgb(79, 120, 255); */
+}
+
+.slidetwo {
+    height: 100vh;
+    /* background: rgb(0, 60, 255); */
+}
+
+
+/* hover blur */
+
+/* .box {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 20%;
+    color: aliceblue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    transition: .3s;
+    border-radius: 5px;
+    filter: blur(10px);
+    cursor: pointer;
+}
+
+.box1 {
+    background-color: cadetblue;
+}
+
+.box:hover {
+    transform: scale(1.1);
+    filter: blur(0px);
+} */
+
+
+/* reaveal fondu */
+
+/* .box2 {
+    position: absolute;
+    margin-top: 20%;
+    margin-left: 40%;
+    color: aliceblue;
+    width: 200px;
+    height: 200px;
+    display: grid;
+    place-items: center;
+    transition: .3s;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.box2 {
+    background-color: black;
+    background-size: cover;
+    background-position-x: 50%;
+    filter: grayscale();
+    background-image: url(./Evariste-Vital_Luminais_-_Fuite_de_Gradlon_\(ca.1884\).jpg);
+
+    div {
+        width: 100%;
+        height: 100%;
+        background-color: #000;
+        border-radius: 5px;
+    }
+}
+
+.box2:hover {
+    
+    div {
+        transition: all 1s;
+        background-color: #0000;
+    }
+} */
+
+
+/* dégradé reveal up */
+
+/* .box3 {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    margin-top: 20%;
+    margin-left: 60%;
+    display: grid;
+    place-items: center;
+    transition: .3s;
+    border-radius: 5px;
+    cursor: pointer;
+    background-size: cover;
+    background-position-x: 50%;
+    filter: grayscale(0%);
+    background-image: url(./image.jpg);
+}
+
+.box3::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 0px;                
+    bottom: 0%;
+    left: 0%;
+    background: linear-gradient(0deg, rgb(79, 120, 255) 41%, rgba(0,212,255,0) 100%);
+    z-index: -1;
+    transition: 2s linear;
+    border-radius: 5px;
+}
+
+.box3:hover::before {
+    height: 150%;
+} */
+
+
+
+

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./style copy.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <a href="http://127.0.0.1:5500/index.html" style="display: none;" id="boutton-next" class="btn"></a>
+    <div class="diver">
+        <div id="bulle" onclick="myFunction()">
+            <div class="text">
+                <h1 id="demo">C'est ici que nous allons plonger!</h1>
+            </div>
+        </div>
+        
+        <img src="./illus/plongeur.png" alt=""> 
+    </div>
+
+
+    <script>
+        var compteur =0;
+        function myFunction() {
+            var texte=['C est le lieu supposé du domaine de Suscinio', 'C est parti!!! A vos bouteilles']
+            if(compteur<texte.length){
+                document.getElementById("demo").innerHTML = texte[compteur];
+                compteur++
+            }
+            if (compteur == texte.length) {
+                document.getElementById("boutton-next").style.display = "block"
+            }
+          
+        }
+    </script>
+</body>
+</html>

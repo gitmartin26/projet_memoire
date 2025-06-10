@@ -1,0 +1,205 @@
+@import url(./font.css);
+
+body {
+    margin: 0;
+    font-family: kalam;
+}
+
+.parallax {
+    min-height: 100vh;
+    background: linear-gradient(
+        #333,
+        #111
+    );
+    position: relative;
+    overflow: hidden;
+}
+
+/* .parallax h1 {
+    margin: 5;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 2.5em;
+} */
+
+#front-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#middle-layer{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* pointer-events: none; */
+}
+
+#back-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+}
+
+#front-layer {
+    z-index: 6;
+}
+
+#middle-layer {
+    z-index: 4;
+}
+
+#back-layer {
+    z-index: 3;
+}
+
+#front-layer img,
+#middle-layer,
+#back-layer img {
+    position: absolute;
+}
+
+/* .front-layer img {
+    box-shadow: 0 0 1.5em rgb(0, 0, 0, 0.5);
+    max-width: 220px;
+}
+
+.back-layer img {
+    box-shadow: 0 0 1.5em rgb(0, 0, 0, 0.8);
+    max-width: 380px;
+} */
+
+#front-layer > img {
+    top: -50%;
+    left: 250px;
+    width: 100%;
+}
+
+#middle-layer img:nth-child(1) {
+    margin-left: 5%;
+    margin-top: 5%;
+    width: 30%;
+    /* cursor: pointer; */
+}
+
+#back-layer img:nth-child(1) {
+    width: 100%;
+}
+
+
+/* texte */
+:root {
+    --fadeHeight: 5em;
+}
+
+.card{  
+    position: fixed;
+    top: 10%;
+    left: 70%;
+    width: 300px;
+    max-height: 500px;
+    padding: 25px;
+    /* border: 1px solid black; */
+    /* background-color: #FFD282; */
+    overflow: scroll;
+    mask-image:
+    linear-gradient(
+        to top,
+        transparent,
+        transparent var(--fadeHeight),
+        black var(--fadeHeight),
+        black calc(100% - var(--fadeHeight)),
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        transparent,
+        transparent var(--fadeHeight),
+        black var(--fadeHeight),
+        black calc(100% - var(--fadeHeight)),
+        transparent
+      );
+      z-index: 2;
+}
+
+#left {
+    font-size: 22px;
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.card p{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.img1 {
+    position: absolute;
+    width: 100%;
+    left: 0%;
+    z-index: 0;
+}
+
+.img2 {
+    position: absolute;
+    top: 52%;
+    right: 5%;
+    width: 100%;
+    z-index: 1;
+}
+
+.btn {
+    position: absolute;
+    width: 3vw;
+    top: 75%;
+    left: 80%;
+    aspect-ratio: 1;
+    /* background-color: rgb(133, 151, 255);
+    border: 0.2px solid #8f8f9d;
+    border-radius: 5px;
+    padding: 3px;
+    color: black;
+    font-family: humane;
+    font-size: 30px;
+    text-align: center;
+    text-decoration: none; */
+    background-image: url(/illus/fleche_b.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+    z-index: 5;
+}
+
+.no-hover {
+    pointer-events: none;
+}
+
+.bird {
+    width: 30%;
+    margin-left: 300px;
+    margin-bottom: 50px;
+}
+
+.arbre {
+    margin-left: -35%;
+}
+

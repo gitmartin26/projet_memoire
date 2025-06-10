@@ -1,0 +1,78 @@
+html {
+    height: 100vh;
+    /* overflow: hidden; */
+}
+
+:root {
+    --fadeHeight: 5em;
+}
+
+.section1 {
+    height: 1000%;
+    mask-image: 
+    linear-gradient(
+      to top,
+      transparent,
+      transparent var(--fadeHeight),
+      black var(--fadeHeight),
+      black calc(100% - var(--fadeHeight)),
+      transparent
+    ),
+    linear-gradient(
+      to bottom,
+      transparent,
+      transparent var(--fadeHeight),
+      black var(--fadeHeight),
+      black calc(100% - var(--fadeHeight)),
+      transparent
+    );
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    background-image: url(./illus/suscinio_immergé.jpg);
+}
+
+.card{
+    position: fixed;
+    margin-top: 10%;
+    margin-left: 10%;
+    width: 200px;
+    max-height: 500px;
+    padding: 5px;
+    border: 1px solid black;
+    background-color: bisque;
+    overflow: scroll;
+    mask-image:
+    linear-gradient(
+        to top,
+        transparent,
+        transparent var(--fadeHeight),
+        black var(--fadeHeight),
+        black calc(100% - var(--fadeHeight)),
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        transparent,
+        transparent var(--fadeHeight),
+        black var(--fadeHeight),
+        black calc(100% - var(--fadeHeight)),
+        transparent
+      );
+}
+
+.card::-webkit-scrollbar {
+    display: none;
+}
+
+.card p{
+    text-align: center;
+    color: rgb(56, 56, 56);
+}
+
+::-webkit-scrollbar {
+  display: none;
+}

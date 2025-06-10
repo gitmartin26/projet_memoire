@@ -1,0 +1,225 @@
+@import url(./font.css);
+
+body {
+    background: linear-gradient(
+        #333,
+        #111
+    );
+    height: 15000px;
+    font-family: kalam;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+#map {
+    height: 100vh;
+    width: 100vw;
+    object-fit: cover;
+    position: fixed;
+    scroll-behavior: smooth;
+    top: 0;
+    /* background-image: url(/zoom_bretagne.mp4); */
+    /* background-size: cover; */
+}
+
+section::before {
+    content: '';
+    position: absolute;
+    /* bottom: 0;
+    width: 100%;
+    height: 100px;
+    background: linear-gradient(to top, #333, transparent);
+    z-index: 10000; */
+}
+
+.section {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    pointer-events: none;
+    z-index: 10;
+}
+
+#front1 {
+    width: 120%;
+    height: 120%;
+    margin-top: -10%;
+    left: 5%;
+}
+
+#front2 {
+    width: 120%;
+    height: 120%;
+    left: -20%;
+}
+/* #carte {
+    position: absolute;
+    top: 200%;
+    width: 100%;
+    height: 100%;
+} */
+
+.sidebar {
+    width: 100%;
+    height: 100%;
+}
+
+.sidebar .content-wrapper img {
+    position: relative;
+    top: 200%;
+    width: 100%;
+    height: 100%;
+}
+
+.card{
+    position: absolute;
+    top: 230%;
+    left: 10%;
+    width: 300px;
+    text-align: center;
+    /* max-height: 400px; */
+    padding: 25px;
+    border: 1px solid rgb(0, 0, 0);
+    overflow: hidden;
+    background-color: #FFD282;
+    z-index: 11;
+}
+
+.card p {
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+}
+
+.card2{
+    position: absolute;
+    top: 490%;
+    left: 13%;
+    width: 70%;
+    /* max-height: 400px; */
+    padding: 25px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    overflow: hidden;
+    /* background-color: #ffffff61; */
+    text-align: center;
+    font-size: 40px;
+    /* mask-image:
+    linear-gradient(
+        to top,
+        transparent,
+        transparent var(--fadeHeight),
+        black var(--fadeHeight),
+        black calc(100% - var(--fadeHeight)),
+        transparent
+      ),
+      linear-gradient(
+        to bottom,
+        transparent,
+        transparent var(--fadeHeight),
+        black var(--fadeHeight),
+        black calc(100% - var(--fadeHeight)),
+        transparent
+      ); */
+      z-index: 10;
+}
+
+.card2 p {
+    color: rgb(255, 255, 255);
+}
+
+.card3 p {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+    width: 65vw;
+    font-size: 40px;
+    color: aliceblue;
+    text-align: center;
+    /* max-height: 400px; */
+    overflow: hidden;
+    z-index: 10;
+}
+
+.card4{
+    position: absolute;
+    top: 320%;
+    left: 20%;
+    width: 800px;
+    font-size: 40px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    /* max-height: 400px; */
+    padding: 25px;
+    /* border: 1px solid rgb(0, 0, 0); */
+    overflow: hidden;
+    background-color: #ffffff61;
+    z-index: 11;
+}
+
+#car {
+    top: 250%;
+    left: 50%;
+    width: 50%;
+    height: auto;
+}
+
+#home {
+    top: 235%;
+    left: 0%;
+    height: auto;
+    width: 70%;
+}
+
+#yeux1 {
+    top: 360%;
+    left: 35%;
+    width: 30%;
+    height: auto;
+    border: 3px solid #000000;
+    border-radius: 5px;
+}
+
+/* #yeux2 {
+    top: 360%;
+    left: 25%;
+    width: 20%;
+    height: auto;
+    border: 3px solid #000000;
+    border-radius: 5px;
+} */
+
+/* #decouverte {
+    top: 550%;
+    left: 0%;
+    width: 101%;
+    height: auto;
+    border: 3px solid #000000;
+    border-radius: 5px;
+} */
+
+#map,
+#decouverte {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  z-index: -2;
+  transition: opacity 1.5s ease;
+}
+
+
+
