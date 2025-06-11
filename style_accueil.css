@@ -11,7 +11,7 @@ body {
     position: absolute;
     top: 2%;
     left: 4.5%;
-    font-size: 250px;
+    font-size: 140px;
     color: aliceblue;
     text-align: center;
     justify-content: center;
@@ -37,8 +37,8 @@ body {
     top: 90%;
     z-index: 3;
     margin: 5px;
-    width: 10%;
-    height: 2%;
+    width: 15%;
+    height: 3.65%;
     background: none;
     border: 4px solid rgb(255, 255, 255);
     border-radius: 5px;
