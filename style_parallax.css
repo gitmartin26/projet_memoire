@@ -167,6 +167,22 @@ section::before {
     z-index: 11;
 }
 
+.card5 {
+     position: absolute;
+    top: 650%;
+    left: 13%;
+    width: 70%;
+    padding: 25px;
+    overflow: hidden;
+    text-align: center;
+    font-size: 40px;
+    z-index: 10;
+}
+
+.card5 p {
+    color: aliceblue;
+}
+
 #car {
     top: 250%;
     left: 50%;
@@ -220,6 +236,8 @@ section::before {
   z-index: -2;
   transition: opacity 1.5s ease;
 }
+
+
 
 
 
