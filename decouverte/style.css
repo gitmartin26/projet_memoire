@@ -44,7 +44,7 @@ body {
 
 }
 
-#img{
+/* #img{
     position: fixed;
     mask-image: url(./illus/nature-yuh.png);
     width: 100vw;
@@ -52,7 +52,7 @@ body {
     mask-size: 400px 400px;
     mask-position: 500px 500px;
     mask-repeat: no-repeat;
-}
+} */
 
 .slide {
     width: 100%;
