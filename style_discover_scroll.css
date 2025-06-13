@@ -18,21 +18,27 @@ html {
       black calc(100% - var(--fadeHeight)),
       transparent
     ),
-    linear-gradient(
+    /* linear-gradient(
       to bottom,
       transparent,
       transparent var(--fadeHeight),
       black var(--fadeHeight),
       black calc(100% - var(--fadeHeight)),
       transparent
-    );
+    ); */
 }
 
 body {
     width: 100vw;
     height: 100vh;
     margin: 0;
-    background-image: url(./illus/suscinio_immergé.jpg);
+    /* background-image: url(./submersion.png); */
+}
+
+.full-image {
+  width: 100vw;   /* image prend toute la largeur */
+  height: auto;   /* conserve les proportions */
+  display: block; /* enlève l’espace blanc sous l’image */
 }
 
 .card{
@@ -62,6 +68,7 @@ body {
         black calc(100% - var(--fadeHeight)),
         transparent
       );
+    z-index: 100;
 }
 
 .card::-webkit-scrollbar {
